@@ -1,0 +1,34 @@
+{
+  "name": "satic-dir",
+  "version": "0.1.2",
+  "description": "a cli to generate static index directory html",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "@arsandev/static-dir": "bin/static-dir",
+    "static-dir": "bin/static-dir"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "indexof",
+    "static",
+    "html",
+    "site"
+  ],
+  "author": "Arsan",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "esm": "^3.2.25",
+    "figlet": "^1.4.0",
+    "handlebars": "^4.7.6",
+    "recursive-copy": "^2.0.10",
+    "recursive-readdir": "^2.2.2",
+    "rimraf": "^3.0.2",
+    "yargs": "^15.3.1"
+  }
+}
