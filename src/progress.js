@@ -8,10 +8,10 @@ export default function progress(src, template="just-listed") {
   fs.mkdirSync(global.build_dir)
   generateJson(src).then((obj) => {
     generateIndex(obj, template)
+    copy(src)
   }).catch(err => {
     console.log(err)
   })
-  copy(src)
 
   process.on('uncaughtException', function(err) {
     console.log("Progress Aborted!")
