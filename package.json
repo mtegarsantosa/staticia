@@ -25,7 +25,6 @@
     "chalk": "^4.0.0",
     "esm": "^3.2.25",
     "figlet": "^1.4.0",
-    "handlebars": "^4.7.6",
     "recursive-copy": "^2.0.10",
     "recursive-readdir": "^2.2.2",
     "rimraf": "^3.0.2",

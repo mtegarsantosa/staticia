@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Just Listed Directory</title>
+    <script src="js/hbs.js" charset="utf-8"></script>
+    <script src="data.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div id="content"></div>
+
+    <script id="template" type="text/x-handlebars-template">
+      {{#each folder}}
+        {{this}} <br>
+      {{/each}}
+
+      {{#each file}}
+        {{this.name}}
+      {{/each}}
+    </script>
+
+    <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>
