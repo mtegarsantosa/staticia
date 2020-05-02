@@ -1,5 +1,5 @@
 {
-  "name": "satic-dir",
+  "name": "saticia",
   "version": "0.1.2",
   "description": "a cli to generate static index directory html",
   "main": "index.js",
@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "@arsandev/static-dir": "bin/static-dir",
-    "static-dir": "bin/static-dir"
+    "@arsandev/staticia": "bin/staticia",
+    "staticia": "bin/staticia"
   },
   "publishConfig": {
     "access": "public"
