@@ -1,5 +1,5 @@
-## STATIC-DIR
+## 💻 Staticia
 
 A CLI to Generate Static Index Directory Html
 
-FULL DOCUMENTATION soon...
+Full Documentation soon...
