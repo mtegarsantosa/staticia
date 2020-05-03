@@ -16,6 +16,9 @@ export function cli(){
   var args = argv["_"]
   if (args.length > 0) {
     var args0 = args[0] === "." ? "" : args[0]
+    if (args0.split('/').length > 1) {
+      throw new Error("Invalid directory name")
+    }
     progress(args0, argv["template"])
   }
   else
