@@ -11,6 +11,7 @@ const bar = new cliProgress.SingleBar({
 }, cliProgress.Presets.shades_classic);
 
 export default function progress(src, template="starter") {
+  if (fs.existsSync(global.build_dir)) rimraf.sync(global.build_dir)
   fs.mkdirSync(global.build_dir)
   bar.start(200, 0)
   generateData(src).then(() => {
