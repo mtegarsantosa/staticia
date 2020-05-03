@@ -10,7 +10,7 @@ const bar = new cliProgress.SingleBar({
   format: 'Compiling... |' + chalk.yellow('{bar}') + '| {percentage}% || {value}/{total} Chunks'
 }, cliProgress.Presets.shades_classic);
 
-export default function progress(src, template="just-listed") {
+export default function progress(src, template="starter") {
   fs.mkdirSync(global.build_dir)
   bar.start(200, 0)
   generateData(src).then(() => {
