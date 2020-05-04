@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootsgreen Simple Gallery</title>
+    <script src="js/hbs.js" charset="utf-8"></script>
+    <script src="data.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <script id="template" type="text/x-handlebars-template">
+      <!-- VIEW -->
+      <div class="header bg-success text-white p-2 shadow mb-3">
+          <h4>
+            <a href="?" class="text-white"><b>Bootsgreen Simple</b> Gallery</a>
+          </h4>
+          For Image Only
+      </div>
+      <div class="container">
+        <div class="row dir">
+          {{#each folder}}
+              <div class="col-md-3">
+                <a href="?f={{this.url}}">
+                  <div class="row shadow-sm m-2 p-1">
+                    <div class="col">
+                      <img src="assets/icons/folder.png" alt="Folder" width="70">
+                    </div>
+                    <div class="col">
+                      <div class="title">{{this.name}}</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+          {{/each}}
+        </div>
+
+        <div class="row file">
+          {{#each file}}
+            <div class="col-md-4">
+              <a href="{{this.url}}" target="_blank">
+                <div class="m-2 img-thumbnail">
+                  <img src="{{this.url}}" alt="{{this.name}}">
+                  <div class="mt-2">
+                    <img src="assets/icons/image.png" alt="Image" style="width:20px;height:20px;"> {{this.name}}
+                  </div>
+                </div>
+              </a>
+            </div>
+          {{/each}}
+        </div>
+      </div>
+
+      <div class="text-center mt-5 mb-3">
+        <small>Bootsgreen Simple Gallery for STATICIA - <a href="https://github.com/arsandev">arsandev</a></small>
+      </div>
+      <!-- VIEW -->
+    </script>
+
+    <script src="js/staticia.js" charset="utf-8"></script>
+    <script src="assets/js/custom-script.js" charset="utf-8"></script>
+  </body>
+</html>
