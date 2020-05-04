@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Just Listed Bootstrap Directory</title>
+    <script src="js/hbs.js" charset="utf-8"></script>
+    <script src="data.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <script id="template" type="text/x-handlebars-template">
+      <!-- VIEW -->
+      <a href="?">..</a>
+      <font color="red" style="float:right">
+        *you are currently using starter staticia theme.
+        <a target="_blank" href="https://github.com/arsandev/staticia#themes">get more themes</a>
+      </font>
+      <h2>/{{dest}}</h2>
+      <h3>Folder:</h3>
+      <ul>
+        {{#each folder}}
+          <li><a href="?f={{this.url}}">{{this.name}}</a></li>
+        {{/each}}
+      </ul>
+
+      <h3>File:</h3>
+      <ul>
+        {{#each file}}
+          <li>
+          Name: <a href="{{this.url}}">{{this.name}}</a>
+          <br>
+          Extension: {{this.ext}}
+        </li>
+        {{/each}}
+      </ul>
+      <!-- VIEW -->
+    </script>
+
+    <script src="js/staticia.js" charset="utf-8"></script>
+    <script src="assets/js/custom-script.js" charset="utf-8"></script>
+  </body>
+</html>
