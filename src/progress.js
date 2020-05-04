@@ -8,12 +8,20 @@ import cliProgress from 'cli-progress'
 
 const bar = new cliProgress.SingleBar({
   format: 'Compiling... |' + chalk.yellow('{bar}') + '| {percentage}% || {value}/{total} Chunks'
-}, cliProgress.Presets.shades_classic);
+}, cliProgress.Presets.shades_classic)
+
+const rimrafSync = () => {
+  return new Promise ((resolve) => {
+    rimraf.sync(global.build_dir)
+    resolve()
+  })
+}
 
 export default function progress(src, template="starter") {
   src = src.replace(/\//g,"\\")
-  if (fs.existsSync(global.build_dir)) rimraf.sync(global.build_dir)
-  fs.mkdirSync(global.build_dir)
+  rimrafSync().then(() => {
+    fs.mkdirSync(global.build_dir)
+  })
   bar.start(200, 0)
   generateData(src).then(() => {
     bar.update(50)
