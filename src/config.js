@@ -1,2 +1,2 @@
-global.build_dir = "Staticia (Build)"
+global.build_dir = "dist"
 global.main_dir = "main"
