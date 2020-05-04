@@ -1,7 +1,11 @@
 ## 🍃 Bootsgreen Simple Gallery
 
-> ! This theme is for image only
+Note:
+```diff
+- ! This theme is for image only
+```
 
+Command:
 ```sh
 staticia {directory} --template bootsgreen-simple-gallery
 ```
