@@ -1,0 +1,16 @@
+.header h4{
+  margin: 0;
+}
+.dir{
+  text-align:center;
+}
+.dir a:hover{
+  text-decoration: none;
+}
+.file img{
+  height: 300px;
+  width: 100%;
+}
+.file .img-thumbnail{
+  overflow: hidden;
+}
