@@ -18,7 +18,7 @@ const rimrafSync = () => {
   })
 }
 
-export default function progress(src, template="starter") {
+export default function progress(src, template="default") {
   src = src.replace(/\//g,"\\")
   rimrafSync().then(() => {
     fs.mkdirSync(global.build_dir)
