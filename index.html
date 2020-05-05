@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Just Listed Directory</title>
-    <script src="staticia/hbs.js" charset="utf-8"></script>
     <script src="data.js" charset="utf-8"></script>
+    <script src="staticia/hbs.js" charset="utf-8"></script>
+    <script src="staticia/staticia.js" charset="utf-8"></script>
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
@@ -12,10 +13,14 @@
       <!-- VIEW -->
       <a href="?">..</a>
       <font color="red" style="float:right">
-        *you are currently using starter staticia theme.
-        <a target="_blank" href="https://github.com/arsandev/staticia#-template">get more themes</a>
+        *you are currently using starter staticia template.
+        <a target="_blank" href="https://github.com/arsandev/staticia#-template">get more template</a>
       </font>
-      <h2>/{{dest}}</h2>
+      <h2>
+        {{#each dest}}
+          /{{this}}
+        {{/each}}
+      </h2>
       <h3>Folder:</h3>
       <ul>
         {{#each folder}}
@@ -27,16 +32,29 @@
       <ul>
         {{#each file}}
           <li>
+            
+          <!-- {{#if (or
+            (eq this.extension ".jpg")
+            (eq this.extension ".png")
+            (eq this.extension ".svg")
+            (eq this.extension ".gif")
+            (eq this.extension ".jpeg")
+            (eq this.extension ".bmp")
+          )}}
+            I'm an image
+          {{else}}
+            I'm not an image
+          {{/if}} -->
+
           Name: <a href="{{this.url}}">{{this.name}}</a>
           <br>
-          Extension: {{this.ext}}
+          Extension: {{this.extension}}
         </li>
         {{/each}}
       </ul>
       <!-- VIEW -->
     </script>
 
-    <script src="staticia/staticia.js" charset="utf-8"></script>
     <script src="assets/js/custom-script.js" charset="utf-8"></script>
   </body>
 </html>
