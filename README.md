@@ -13,9 +13,17 @@ staticia {dirname}
 ```
 
 ## 📐 Template
+**Usage:**
 ```sh
 staticia {dirname} --template {template name}
 ```
+
+**List all templates name:**
+```sh
+staticia --list
+```
+
+Check more [Staticia Template Source Code](https://github.com/arsandev/staticia/tree/master/builder/templates)
 
 ## 🤝 Contribute
 You can contributing code and templates for this open source. Please see this **[Contribution Guide](https://github.com/arsandev/staticia/blob/master/CONTRIBUTE.md)**

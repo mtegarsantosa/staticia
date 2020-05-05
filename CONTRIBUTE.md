@@ -10,7 +10,7 @@ Please read this contribute guide.
 
 ## Contributing to Template
 - Fork this repo to your repository.
-- Clone this branch: **[Template Starter](https://github.com/arsandev/staticia/blob/template-starter)**.
+- Clone this branch: **[Template Starter](https://github.com/arsandev/staticia/tree/template-starter)**.
 ```sh
 git clone --single-branch --branch template-starter https://github.com/arsandev/staticia.git
 ```
