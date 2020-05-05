@@ -12,6 +12,8 @@ npm i -g staticia
 staticia {dirname}
 ```
 
+![Staticia Usage](https://1.bp.blogspot.com/-K5leHi5ehvU/XrEkfv0tDyI/AAAAAAAAKWE/YYCgVIMqP7ETFIj1xctBOdQzPBeZcUujACK4BGAsYHg/d/staticia-demo.gif "Staticia Usage")
+
 **More Command:**
 ```sh
 staticia --help
@@ -22,6 +24,8 @@ staticia --help
 ```sh
 staticia {dirname} --template {template name}
 ```
+
+![Change Template](https://1.bp.blogspot.com/-UzLVNaMWV0U/XrEkgLT-zaI/AAAAAAAAKWI/kcYWYM6JSpkXik9IlQED58PiqDaol4r6ACK4BGAsYHg/d/staticia-template.png "Change Template")
 
 **List all templates name:**
 ```sh
