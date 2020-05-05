@@ -1,4 +1,5 @@
 
+
 # 💻 Staticia
 A CLI to Generate Static Index Directory Html
 
@@ -12,6 +13,8 @@ npm i -g staticia
 staticia {dirname}
 ```
 
+<kbd><img src="https://1.bp.blogspot.com/-K5leHi5ehvU/XrEkfv0tDyI/AAAAAAAAKWE/YYCgVIMqP7ETFIj1xctBOdQzPBeZcUujACK4BGAsYHg/d/staticia-demo.gif" alt="Staticia Usage"></kbd>
+
 **More Command:**
 ```sh
 staticia --help
@@ -22,6 +25,8 @@ staticia --help
 ```sh
 staticia {dirname} --template {template name}
 ```
+
+<kbd><img src="https://1.bp.blogspot.com/-UzLVNaMWV0U/XrEkgLT-zaI/AAAAAAAAKWI/kcYWYM6JSpkXik9IlQED58PiqDaol4r6ACK4BGAsYHg/d/staticia-template.png" alt="Staticia Template"></kbd>
 
 **List all templates name:**
 ```sh
