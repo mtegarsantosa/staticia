@@ -1,6 +1,8 @@
 # Contributing to Staticia
 First, thanks for taking the time to contribute! 🎉🎊
 
+Please read this contribute guide.
+
 ## Contributing to Code
 - Fork this repo to your repository.
 - Make any changes to code.
@@ -8,7 +10,10 @@ First, thanks for taking the time to contribute! 🎉🎊
 
 ## Contributing to Template
 - Fork this repo to your repository.
-- Clone this branch: [Template Starter](https://github.com/arsandev/staticia/blob/template-starter).
+- Clone this branch: **[Template Starter](https://github.com/arsandev/staticia/blob/template-starter)**.
+```sh
+git clone --single-branch --branch template-starter https://github.com/arsandev/staticia.git
+```
 - Make any changes to template.
-- Save your change to [staticia/builder/templates/](https://github.com/arsandev/staticia/tree/master/builder/templates){your template's name}
+- Save your change to **your_fork/staticia/builder/templates/{your template's name}**
 - Open a pull request
