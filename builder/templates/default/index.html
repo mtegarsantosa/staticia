@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staticia Default</title>
+    <script src="data.js" charset="utf-8"></script>
+    <script src="staticia/hbs.js" charset="utf-8"></script>
+    <script src="staticia/staticia.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <script id="template" type="text/x-handlebars-template">
+      <!-- VIEW -->
+      <div class="container content">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="?">**</a></li>
+            {{#each dest}}
+            <li class="breadcrumb-item">{{this}}</li>
+            {{/each}}
+          </ol>
+        </nav>
+
+        <h6>Directory:</h6>
+        <div class="row dir">
+          {{#each folder}}
+            <div class="col-md-3">
+              <a href="?f={{this.url}}">
+                <div class="shadow-sm p-2">
+                  <div class="row">
+                    <div class="col-sm-2">
+                      <img src="assets/icons/folder.png" width="30" alt="FODLER">
+                    </div>
+                    <div class="col-sm-10">
+                      {{this.name}}
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            {{else}}
+            <div class="col-md-12">
+              <div class="alert alert-warning">There is no any directory here.</div>
+            </div>
+          {{/each}}
+        </div>
+
+        <h6 class="mt-3">File:</h6>
+          <div class="row">
+            {{#each file}}
+
+            <div class="col-md-4">
+              <a href="{{this.url}}" target="_blank">
+                <div class="p-2">
+                  {{#if (or
+                    (eq this.extension ".jpg")
+                    (eq this.extension ".png")
+                    (eq this.extension ".svg")
+                    (eq this.extension ".gif")
+                    (eq this.extension ".jpeg")
+                    (eq this.extension ".bmp")
+                  )}}
+                    <img src="{{this.url}}" alt="{{this.name}}" class="img-thumbnail" style="width:100%"><br>
+                    <img src="assets/icons/image.png" alt="FILE" width="20">
+                    {{else}}
+                    <img src="assets/icons/file.png" alt="FILE" width="20">
+                  {{/if}}
+                  {{this.name}}
+                </div>
+              </a>
+            </div>
+            {{else}}
+          </div>
+          <div class="alert alert-warning">There is no any file here.</div>
+        {{/each}}
+      </div>
+
+      <div class="mt-5 text-right footer p-3"><small class="bg-secondary text-white p-1">Created with <a href="https://github.com/arsandev/staticia">Staticia</a> | <a href="https://github.com/arsandev/staticia#-template">Get More Template</a></small></div>
+      <!-- VIEW -->
+    </script>
+
+    <script src="assets/js/custom-script.js" charset="utf-8"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+body{
+  font-size: 13px;
+}
+.content{
+  margin-top: 30px;
+}
+a:hover{
+  text-decoration: none;
+}
+.footer a{
+  color: #FFF;
+  text-decoration: underline;
+}
