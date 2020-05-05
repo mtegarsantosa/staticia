@@ -16,5 +16,7 @@ Please read this contribute guide.
 git clone --single-branch --branch template-starter https://github.com/arsandev/staticia.git
 ```
 - Make any changes to template.
+- You can insert credit or copyright on README.md or inside template.
 - Save your change to **your_fork/staticia/builder/templates/{your template's name}**
 - Open a pull request
+*Note:* If you want to insert some template previews, please do not upload it to repo. You can insert it by external link source instead.
