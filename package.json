@@ -19,8 +19,16 @@
         "html",
         "site"
     ],
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/arsandev/staticia.git"
+    },
     "author": "Arsan",
     "license": "MIT",
+    "bugs": {
+    "url": "https://github.com/arsandev/staticia/issues"
+  },
+  "homepage": "https://github.com/arsandev/staticia#readme",
     "dependencies": {
         "chalk": "^4.0.0",
         "cli-progress": "^3.8.2",
