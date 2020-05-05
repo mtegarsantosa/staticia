@@ -13,7 +13,11 @@ npm i -g staticia
 staticia {dirname}
 ```
 
+<<<<<<< HEAD
 <kbd><img src="https://1.bp.blogspot.com/-K5leHi5ehvU/XrEkfv0tDyI/AAAAAAAAKWE/YYCgVIMqP7ETFIj1xctBOdQzPBeZcUujACK4BGAsYHg/d/staticia-demo.gif" alt="Staticia Usage"></kbd>
+=======
+![Staticia Usage](https://1.bp.blogspot.com/-K5leHi5ehvU/XrEkfv0tDyI/AAAAAAAAKWE/YYCgVIMqP7ETFIj1xctBOdQzPBeZcUujACK4BGAsYHg/d/staticia-demo.gif "Staticia Usage")
+>>>>>>> aba2abdc9e125c8a6eab8874c9cec955aef4bcef
 
 **More Command:**
 ```sh
@@ -26,7 +30,11 @@ staticia --help
 staticia {dirname} --template {template name}
 ```
 
+<<<<<<< HEAD
 <kbd><img src="https://1.bp.blogspot.com/-UzLVNaMWV0U/XrEkgLT-zaI/AAAAAAAAKWI/kcYWYM6JSpkXik9IlQED58PiqDaol4r6ACK4BGAsYHg/d/staticia-template.png" alt="Staticia Template"></kbd>
+=======
+![Change Template](https://1.bp.blogspot.com/-UzLVNaMWV0U/XrEkgLT-zaI/AAAAAAAAKWI/kcYWYM6JSpkXik9IlQED58PiqDaol4r6ACK4BGAsYHg/d/staticia-template.png "Change Template")
+>>>>>>> aba2abdc9e125c8a6eab8874c9cec955aef4bcef
 
 **List all templates name:**
 ```sh
