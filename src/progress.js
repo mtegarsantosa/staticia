@@ -24,7 +24,7 @@ export default function progress(src, template="default") {
     fs.mkdirSync(global.build_dir)
   })
   console.log()
-  console.log(chalk.yellow(`Starting build static directori with template "${template}"`))
+  console.log(chalk.yellow(`Starting build static directory with template "${template}"`))
   bar.start(200, 0)
   generateData(src).then((data) => {
     bar.update(50)
