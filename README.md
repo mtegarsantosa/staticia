@@ -21,6 +21,8 @@ staticia --help
 ```
 
 ## 📐 Template
+We provide many templates for building static directories. Use this command to select template you want to use.
+
 **Usage:**
 ```sh
 staticia {dirname} --template {template name}
@@ -33,10 +35,10 @@ staticia {dirname} --template {template name}
 staticia --list
 ```
 
-Check more [Staticia Template Source Code](https://github.com/arsandev/staticia/tree/master/builder/templates)
+Check more **[Staticia Template Source Code](https://github.com/arsandev/staticia/tree/master/builder/templates)**
 
 ## 🤝 Contribute
-You can contributing code and templates for this open source. Please see this **[Contribution Guide](https://github.com/arsandev/staticia/blob/master/CONTRIBUTE.md)**
+Every contribution is greatly appreciated. You can contributing code and templates for this open source. Please see this **[Contribution Guide](https://github.com/arsandev/staticia/blob/master/CONTRIBUTE.md)**
 
 ## ✨ Contributors
 
