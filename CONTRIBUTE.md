@@ -8,7 +8,7 @@ First, thanks for taking the time to contribute! 🎉🎊
 
 ## Contributing to Template
 - Fork this repo to your repository.
-- Clone this branch: [Theme Starter](https://github.com/arsandev/staticia/blob/template-starter).
+- Clone this branch: [Template Starter](https://github.com/arsandev/staticia/blob/template-starter).
 - Make any changes to template.
 - Save your change to [staticia/builder/templates/](https://github.com/arsandev/staticia/tree/master/builder/templates){your template's name}
 - Open a pull request

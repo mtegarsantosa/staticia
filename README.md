@@ -3,16 +3,22 @@
 A CLI to Generate Static Index Directory Html
 
 ## 📀 Install
-``npm i -g staticia``
+```sh
+npm i -g staticia
+```
 
 ## 👀 Usage
-``staticia {dirname}``
+```sh
+staticia {dirname}
+```
 
 ## 📐 Template
-``staticia {dirname} --template {template's name}``
+```sh
+staticia {dirname} --template {template name}
+```
 
 ## 🤝 Contribute
-You can contributing code and templates for this open source. Please see this [Contribution Guide](https://github.com/arsandev/staticia/blob/master/CONTRIBUTE.md)
+You can contributing code and templates for this open source. Please see this **[Contribution Guide](https://github.com/arsandev/staticia/blob/master/CONTRIBUTE.md)**
 
 ## ✨ Contributors
 
