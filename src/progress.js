@@ -1,6 +1,7 @@
 import copy from '../lib/copy'
 import generateData from '../lib/data'
 import generatePage from '../lib/page'
+import objectResult from '../ext/objectResult'
 import fs from 'fs'
 import chalk from 'chalk'
 import rimraf from 'rimraf'
@@ -23,8 +24,9 @@ export default function progress(src, template="starter") {
     fs.mkdirSync(global.build_dir)
   })
   bar.start(200, 0)
-  generateData(src).then(() => {
+  generateData(src).then((data) => {
     bar.update(50)
+    objectResult(data)
     generatePage(template).then(() => {
       bar.update(150)
     })
