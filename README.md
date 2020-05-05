@@ -12,6 +12,11 @@ npm i -g staticia
 staticia {dirname}
 ```
 
+**More Command:**
+```sh
+staticia --help
+```
+
 ## 📐 Template
 **Usage:**
 ```sh
