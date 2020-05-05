@@ -1,5 +1,6 @@
 # Contributing to Staticia
 First, thanks for taking the time to contribute! 🎉🎊
+No matter how small contribution you can make, i will appreaciate and accept it.
 
 Please read this contribute guide.
 
