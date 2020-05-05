@@ -1,0 +1,1 @@
+var data = {"file":[{"name":"my image 1.png","ext":".png"},{"name":"my image 2.png","ext":".png"}],"my folder 1":{"file":[{"name":"my image 1.png","ext":".png"}],"my sub folder":{"file":[{"name":"a text document.txt","ext":".txt"}],"my sub folder":{"file":[{"name":"windows-command.bat","ext":".bat"}]}}},"my folder 2":{"file":[{"name":"my image 1.png","ext":".png"}]}}
