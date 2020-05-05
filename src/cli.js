@@ -1,6 +1,5 @@
 import progress from './progress'
-import splash from './splash'
-import cmdCheck from './cmd-check'
+import cmdCheck from './check'
 import './config'
 import yargs from 'yargs'
 
@@ -9,6 +8,10 @@ const argv = yargs
     .option('template', {
         description: 'Change template on build',
         type: 'string',
+    })
+    .option('list', {
+        description: 'See all available templates',
+        type: 'boolean',
     })
     .help()
     .alias('help', 'h')
@@ -19,16 +22,9 @@ const argv = yargs
 
 export function cli() {
     const args = argv['_']
-    let args0
-
-    if (args.length > 0) {
-        args0 = (args[0] === ".") ? "" : args[0]
-        cmdCheck({
-            src: args0,
-            template: argv['template'],
-            list: argv['list']
-        }, progress)
-    } else {
-        splash()
-    }
+    cmdCheck({
+      src: args,
+      template: argv['template'],
+      list:argv['list']
+    }, progress)
 }
