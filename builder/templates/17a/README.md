@@ -2,6 +2,12 @@
 
 > "Friday, unlock 17:A!"
 
+
+```sh
+staticia <directory> --template 17a
+```
+
+
 **Preview:**
 
 ![SS1](./GITHUB/ss1.PNG "SS1")
