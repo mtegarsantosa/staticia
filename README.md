@@ -41,7 +41,7 @@ Thanks goes to these wonderful people:
 <table>
   <tr>
     <td align="center"><a href="https://arsan.dev"><img src="https://avatars3.githubusercontent.com/u/43356029?v=4" width="100px;" alt=""/><br /><sub><b>ARSAN</b></sub></a><br /><a href="https://github.com/arsandev/staticia/commits?author=arsandev" title="Build">🪓</a> <a href="https://github.com/arsandev/staticia/commits?author=arsandev" title="Maintenance">⌛</a> <a href="https://github.com/arsandev/staticia/commits?author=arsandev" title="Code">💻</a> <a href="https://github.com/arsandev/staticia/commits?author=arsandev" title="Template">📐</a></td>
-    <td align="center"><a href="https://https://dicka88.netlify.com"><img src="https://avatars3.githubusercontent.com/u/50340947?v=4" width="100px;" alt=""/><br /><sub><b>Dicka Ismaji</b></sub></a><br /><a href="https://github.com/arsandev/staticia/commits?author=dicka88" title="Maintenance">⌛</a> <a href="https://github.com/arsandev/staticia/commits?author=dicka88" title="Code">💻</a> <a href="https://github.com/arsandev/staticia/commits?author=dicka88" title="Tests">⚠️</a></td>
+    <td align="center"><a href="https://dicka88.netlify.com"><img src="https://avatars3.githubusercontent.com/u/50340947?v=4" width="100px;" alt=""/><br /><sub><b>Dicka Ismaji</b></sub></a><br /><a href="https://github.com/arsandev/staticia/commits?author=dicka88" title="Maintenance">⌛</a> <a href="https://github.com/arsandev/staticia/commits?author=dicka88" title="Code">💻</a> <a href="https://github.com/arsandev/staticia/commits?author=dicka88" title="Tests">⚠️</a></td>
   </tr>
 </table>
 <!-- CONTRIBUTORS END -->
