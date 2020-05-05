@@ -1,3 +1,4 @@
 node_modules
-example
 dist
+.gitignore
+package-lock.json
