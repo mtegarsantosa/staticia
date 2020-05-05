@@ -23,6 +23,8 @@ export default function progress(src, template="starter") {
   rimrafSync().then(() => {
     fs.mkdirSync(global.build_dir)
   })
+  if (!template) template = 'starter'
+    console.log(`Starting build static web with template ${template}`)
   bar.start(200, 0)
   generateData(src).then((data) => {
     bar.update(50)
@@ -37,13 +39,10 @@ export default function progress(src, template="starter") {
       console.log()
       console.log(chalk.yellow(`cd "${global.build_dir}"`))
     })
-  }).catch(err => {
-    console.log(err)
-  })
 
-  process.on('uncaughtException', function(err) {
-    console.log(err)
-    rimraf.sync(global.build_dir)
-    process.exit(1)
-  })
+    process.on('uncaughtException', function(err) {
+        console.log(err)
+        rimraf.sync(global.build_dir)
+        process.exit(1)
+    })
 }
