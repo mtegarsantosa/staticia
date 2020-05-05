@@ -1,0 +1,33 @@
+html{height: 100%;}
+body {
+  margin: 0 auto;
+  background: url('../img/bg.jpg') no-repeat;
+  background-size: cover;
+  font-family: 'Trirong';
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-position: center;
+  }
+}
+.c {
+  position: absolute;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background: rgba(0,0,0,0.7);
+  bottom: 0;
+  top: 0;
+  padding: 40px 20px;
+}
+.dir a {
+  text-decoration: none;
+}
+.dir a .folder-link {
+  color: #FFF;
+  transition: background 0.3s, color 0.1s;
+}
+.dir a:hover .folder-link {
+  background: #FFF;
+  color: #500c14;
+}

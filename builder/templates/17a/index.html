@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>17A</title>
+  <script src="data.js" charset="utf-8"></script>
+  <script src="staticia/hbs.js" charset="utf-8"></script>
+  <script src="staticia/staticia.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <script id="template" type="text/x-handlebars-template">
+    <!-- VIEW -->
+    <div class="c">
+      <div class="container content">
+        <div class="mb-2">
+          <a href="?">ROOT/</a>
+        </div>
+        <div class="row dir">
+          {{#each folder}}
+          <div class="col-md-4">
+            <a href="?f={{this.url}}">
+              <div class="p-2">
+                <div class="folder-link shadow-sm border-bottom border-top p-1 rounded">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <img src="assets/img/folder.png" alt="FOLDER" width="50">
+                    </div>
+                    <div class="col-md-10">
+                      {{this.name}}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          {{/each}}
+        </div>
+
+        <div class="mt-3 row">
+          <div class="col-md-6">
+            <div class="row">
+              {{#each file}}
+              <div class="col-md-6 mb-4">
+                <a href="{{this.url}}">
+                  <div class="shadow-sm">
+                    <div class="row">
+                      <div class="col-md-2">
+                        <img src="assets/img/file.png" alt="FILE" width="30">
+                      </div>
+                      <div class="col-md-10">
+                        {{this.name}}
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              {{/each}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- VIEW -->
+  </script>
+
+  <script src="assets/js/custom-script.js" charset="utf-8"></script>
+</body>
+
+</html>
