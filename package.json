@@ -1,6 +1,6 @@
 {
     "name": "staticia",
-    "version": "0.1.2",
+    "version": "0.2.2",
     "description": "a cli to generate static index directory html",
     "main": "index.js",
     "scripts": {
