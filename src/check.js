@@ -37,6 +37,6 @@ export default function({ src, template, list }, callback) {
       splash()
     }
     else{
-      callback(args0, template)
+      callback(args0, template || undefined)
     }
 }
