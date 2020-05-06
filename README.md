@@ -1,7 +1,9 @@
 
 
-# 💻 Staticia
-A CLI to Generate Static Index Directory Html
+<center>
+  <img src="https://1.bp.blogspot.com/-zTE9Q7JM5ws/XrIgVbCWW_I/AAAAAAAAKYI/1I6GrpkxX70m_5yMYcgoqXIbrgy5kSTggCK4BGAsYHg/d/staticia.png" width="300px; /> <br>
+  <b>A CLI to Generate Static Index Directory Html</b>
+</center>
 
 ## 📀 Install
 ```sh
